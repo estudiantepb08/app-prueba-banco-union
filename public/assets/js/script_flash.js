@@ -1,4 +1,4 @@
-// Daniel Sócrates
+// Daniel Socrates
 function Flash(swf, width, height, flashvars, id){
 	var escreveFlash = new String();
 	if (navigator.appName.indexOf("Microsoft") != -1){
