@@ -643,7 +643,7 @@
             let $selectId = documento.getElementById("list1");
             let $options = "";
 
-            fetch("http://localhost:8080/api/prueba-banco-union/consultor/0,1,2?coSistema=1&inActivo=S")
+            fetch("https://prueba-tecnica-banco-union-production.up.railway.app/api/prueba-banco-union/consultor/0,1,2?coSistema=1&inActivo=S")
                 .then(res => res.ok ? res.json() : Promise.reject(res))
                 .then(json => {
                     json.forEach(el => {
@@ -669,7 +669,7 @@
     <META http-equiv=Refresh content="600; url=main.php">
     <META name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!--link rel="stylesheet" href="assets/css/style.css"-->
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
 
 
@@ -857,14 +857,14 @@
                                             <td>
                                                 <table align="center">
                                                     <tr>
-                                                        <td><select multiple size="8" name="list1" id="list1" style="width:280">
+                                                        <td><select class="form-select" multiple size="8" name="list1" id="list1" style="width:280">
                                                          
 
                             </select>
                                                         </td>
-                                                        <td align="center" valign="middle"><input name="button" type="button" onClick="move(list1,list2)" value=">>">
+                                                        <td align="center" valign="middle"><button name="button" type="button" class="btn btn-xs btn-pill btn-primary" onClick="move(list1,list2)" value=">>">>></button>
                                                             <br>
-                                                            <input name="button" type="button" onClick="move(list2,list1)" value="<<">
+                                                            <button name="button" type="button" class="btn btn-xs btn-pill btn-primary" onClick="move(list2,list1)" value="<<"><<</button>
                                                         </td>
                                                         <td><select multiple size="8" name="list2" id="list2" style="width:280">
                             </select>

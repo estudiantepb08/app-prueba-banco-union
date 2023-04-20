@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8082;
+const PORT = process.env.PORT || 8082;
 
 app.use(express.static('public'));
 
@@ -15,6 +15,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + "/public/con_desempenho.htm")
 });
 
-app.listen(port, () => {
-    console.log(` 'Listen on the port: ', ${ port }`);
+app.listen(PORT, () => {
+    console.log(` 'Listen on the port: ', ${ PORT }`);
 });
