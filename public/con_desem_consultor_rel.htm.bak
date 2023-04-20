@@ -112,7 +112,7 @@ function selectSub(cat) {
 }
 //  fim do seleciona e mostra campo -->
 </script>
-<SCRIPT language=JavaScript src="js/cor_fundo.js" type=text/javascript></SCRIPT>
+<SCRIPT language=JavaScript src="assets/js/cor_fundo.js" type=text/javascript></SCRIPT>
   <script language="JavaScript">
 <!--
 function PesquisaAvancada()
@@ -193,7 +193,7 @@ var greeting = (display + " ");
 <SCRIPT language=JavaScript>
 <!--
 
-<!-- Começo de formatação de data
+<!-- Comeï¿½o de formataï¿½ï¿½o de data
 var isNav4 = false, isNav5 = false, isIE4 = false
 var strSeperator = "/"; 
 var vDateType = 1;
@@ -248,7 +248,7 @@ var strCheck = '47,48,49,50,51,52,53,54,55,56,57,58,59,95,96,97,98,99,100,101,10
 if (strCheck.indexOf(whichCode) != -1) {
 if (isNav4) {
 if (((vDateValue.length < 6 && dateCheck) || (vDateValue.length == 7 && dateCheck)) && (vDateValue.length >=1)) {
-alert("Data inválida\nPor favor, tente novamente");
+alert("Data invï¿½lida\nPor favor, tente novamente");
 vDateName.value = "";
 vDateName.focus();
 vDateName.select();
@@ -269,7 +269,7 @@ else mYear = '20' + mYear;
 }
 var vDateValueCheck = mMonth+strSeperator+mDay+strSeperator+mYear;
 if (!dateValid(vDateValueCheck)) {
-alert("Data inválida\nPor favor, tente novamente");
+alert("Data invï¿½lida\nPor favor, tente novamente");
 vDateName.value = "";
 vDateName.focus();
 vDateName.select();
@@ -293,7 +293,7 @@ var vDateTypeTemp = vDateType;
 vDateType = 1;
 var vDateValueCheck = mMonth+strSeperator+mDay+strSeperator+mYear;
 if (!dateValid(vDateValueCheck)) {
-alert("Data inválida\nPor favor, tente novamente");
+alert("Data invï¿½lida\nPor favor, tente novamente");
 vDateType = vDateTypeTemp;
 vDateName.value = "";
 vDateName.focus();
@@ -305,7 +305,7 @@ return true;
 }
 else {
 if (((vDateValue.length < 8 && dateCheck) || (vDateValue.length == 9 && dateCheck)) && (vDateValue.length >=1)) {
-alert("Data inválida\nPor favor, tente novamente");
+alert("Data invï¿½lida\nPor favor, tente novamente");
 vDateName.value = "";
 vDateName.focus();
 vDateName.select();
@@ -317,7 +317,7 @@ return false;
 else {
 
 if (((vDateValue.length < 8 && dateCheck) || (vDateValue.length == 9 && dateCheck)) && (vDateValue.length >=1)) {
-alert("Data inválida\nPor favor, tente novamente");
+alert("Data invï¿½lida\nPor favor, tente novamente");
 vDateName.value = "";
 vDateName.focus();
 return true;
@@ -362,7 +362,7 @@ else mYear = '20' + mYear;
 vDateValueCheck = mMonth+strSeperator+mDay+strSeperator+mYear;
 } 
 if (!dateValid(vDateValueCheck)) {
-alert("Data inválida\nPor favor, tente novamente");
+alert("Data invï¿½lida\nPor favor, tente novamente");
 vDateType = vDateTypeTemp;
 vDateName.value = "";
 vDateName.focus();
@@ -405,7 +405,7 @@ if (vDateValue.length == 10&& dateCheck) {
 if (!dateValid(vDateName)) {
 
 
-alert("Data inválida\nPor favor, tente novamente");
+alert("Data invï¿½lida\nPor favor, tente novamente");
 vDateName.focus();
 vDateName.select();
    }
@@ -583,7 +583,7 @@ function numbersonly(myfield, e)
 }
 
 //--> fim da trava para numero apenas
-<!-- início do valida email
+<!-- inï¿½cio do valida email
 function emailCheck (emailStr) {
 var emailPat=/^(.+)@(.+)$/
 var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]"
@@ -596,20 +596,20 @@ var userPat=new RegExp("^" + word + "(\\." + word + ")*$")
 var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$")
 var matchArray=emailStr.match(emailPat)
 if (matchArray==null) {
-	alert("Endereço de Email parece incorreto (verifique @ e .)")
+	alert("Endereï¿½o de Email parece incorreto (verifique @ e .)")
 	return false
 }
 var user=matchArray[1]
 var domain=matchArray[2]
 if (user.match(userPat)==null) {
-    alert("Conta de email parece ser inválido.")
+    alert("Conta de email parece ser invï¿½lido.")
     return false
 }
 var IPArray=domain.match(ipDomainPat)
 if (IPArray!=null) {
 	  for (var i=1;i<=4;i++) {
 	    if (IPArray[i]>255) {
-	        alert("Destino de IP inválido.")
+	        alert("Destino de IP invï¿½lido.")
 		return false
 	    }
     }
@@ -617,7 +617,7 @@ if (IPArray!=null) {
 }
 var domainArray=domain.match(domainPat)
 if (domainArray==null) {
-	alert("Domínio inválido.")
+	alert("Domï¿½nio invï¿½lido.")
     return false
 }
 var atomPat=new RegExp(atom,"g")
@@ -625,7 +625,7 @@ var domArr=domain.match(atomPat)
 var len=domArr.length
 if (domArr[domArr.length-1].length<2 || 
     domArr[domArr.length-1].length>3) {
-   alert("O endereço deve ter 3 letras de domínio, ou 2 letras de país.")
+   alert("O endereï¿½o deve ter 3 letras de domï¿½nio, ou 2 letras de paï¿½s.")
    return false
 }
 if (len<2) {
@@ -818,12 +818,12 @@ type=text/javascript></SCRIPT>
 <option value="aline.chastel" >Aline Chastel Lima</option>
 
 <option value="bruno.freitas" >Bruno Sousa Freitas</option>
-<option value="contato" >Carlos Cezar Girão de Arruda</option>
-<option value="carlos.arruda" >Carlos Flávio Girão de Arruda</option>
+<option value="contato" >Carlos Cezar Girï¿½o de Arruda</option>
+<option value="carlos.arruda" >Carlos Flï¿½vio Girï¿½o de Arruda</option>
 <option value="carlos.carvalho" >Carlos Henrique de Carvalho Filho</option>
 <option value="felipe.chahad" >Felipe Chahad</option>
 
-<option value="silvio.maraes" >Silvio Marães Ferreira</option>
+<option value="silvio.maraes" >Silvio Marï¿½es Ferreira</option>
                             </select>
                           </td>
                           <td align="center" valign="middle"><input name="button" type="button" onClick="move(list1,list2)" value=">>">
