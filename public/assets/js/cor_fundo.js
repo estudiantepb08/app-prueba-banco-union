@@ -1,4 +1,4 @@
-// Funções para colorir os texbox ao entrar e sair dos campos nos cadastros
+// Funciones para colorir os texbox ao entrar e sair dos campos nos cadastros
 function CampoEnter(campo) 
 {
 	campo.style.background = '#FFFFCC';
@@ -11,4 +11,4 @@ function CampoSai(campo)
 	campo.style.color = '#000000';
 	campo.style.fontWeight = 'normal';
 }
-// Fim das funções de colorir os textboxes
+// Fim das funciones de colorir os textboxes
